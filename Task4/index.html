@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get to know someone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <form action="#" id="surveyForm">
+        <fieldset>
+          <legend>Formular de studiu</legend>
+          <div class="form-group">
+            <label for="fullName">Care este numele tau?</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Introdu numele" required />
+          </div>
+          <div class="form-group">
+            <p>Ce ocupatie ai in prezent?</p>
+            <select class="form-control" id="role" name="role" required>
+              <option value="" disabled selected>Selecteaza rolul curent</option>
+              <option value="student">Student</option>
+              <option value="job full time">Job Full Time</option>
+              <option value="learner full time">Learner Full Time</option>
+              <option value="prefer sa nu spun">Prefer sa nu spun</option>
+              <option value="alta ocupatie">Alta ocupatie</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Ce impresie ti-a lasat programul Generatia Tech pana acum?</p>
+            <label><input type="radio" name="user-recommend" id="user-recommend" value="excelent" />Excelent</label>
+            <label><input type="radio" name="user-recommend" id="user-recommend" value="cel mai bun" />Cel mai bun</label>
+            <label><input type="radio" name="user-recommend" id="user-recommend" value="foarte fain" /> Foarte fain</label>
+          </div>
+          <div class="form-group">
+            <p>Ce librarii si framework-uri doresti sa aprofundezi in continuare?</p>
+            <label><input type="checkbox" name="prefer" id="prefer" value="Jquery" />Jquery</label>
+            <label><input type="checkbox" name="prefer" id="prefer" value="NodeJS" />NodeJS</label>
+            <label><input type="checkbox" name="prefer" id="prefer" value="ReactJS" />ReactJS</label>
+            <label><input type="checkbox" name="prefer" id="prefer" value="AngularJS" />AngularJS</label>
+            <label><input type="checkbox" name="prefer" id="prefer" value="VueJS" />VueJS</label>
+          </div>
+          <div class="form-group">
+            <p>Ofera-ne feedback sau sugestii in sectiunea de comentarii!</p>
+            <textarea id="comments" name="comments" placeholder="Introdu un comentariu aici..." required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+          <pre id="message"></pre>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
